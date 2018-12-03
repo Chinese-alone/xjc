@@ -1,57 +1,25 @@
-title: XJC
-description: NEW START OF XJC
-author: BaiMax
-github: https://github.com/Chinese-alone
-about: I am freelance developer. Currently doing more in backend, focused in Python and Django.
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
-avatar_url: /static/img/avatar.jpg
+# Site settings
+# in the templates available like {{ site.myvariable }}.
+title: New start of XJC
+email: 3103887573@qq.com
+brand: XJC
+headline: Inventor, Engineer and Futurist
+description: > # this means to ignore newlines until "baseurl:"
+  New Site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://example.com" # the base hostname & protocol for your site
+copyright: 2016 Whatever Company, Inc. All Rights Reserved.
 
-enableTags: true
-tagarray: []
-
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
-
-social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "https://twitter.com/agusmakmun6"
-    - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/summonagus"
-    - icon: fa-stack-exchange
-      link: "#"
-    - icon: fa-github
-      link: "https://github.com/Chinese-alone"
-
-#share:
- # twitter_username: agusmakmun6
-  #fb_appid: 
-
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
-
-url: "https://Chinese-alone.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
+# Build settings
 markdown: kramdown
-gems:
-  - jekyll-paginate
-  - jekyll-gist
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
+# Account ids
+snapwidget: 247552
+
+# Contacts
+email: 3103887573@qq.com
+phone: 000
+
+# Tracking
+googleAnalitycsID: 000
+

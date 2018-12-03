@@ -1,72 +1,80 @@
-## My Stack Problems
+# Jekyll Instagram Portfolio Theme
 
-> This project forked and has been modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll),
-> and the search posts using [Super Search](https://github.com/chinchang/super-search)
+Clean, minimalistic and responsive portfolio theme for Jekyll powered by Bootstrap 4.
+For the portfolio section is used Instagram widget, but you can easily update it with another content source.
 
-### Demo
-* [https://agusmakmun.github.io](https://agusmakmun.github.io)
+## Live Demo
 
-#### Features
+https://portfolio-central.github.io/jekyll-instagram-portfolio-theme/
+![Jekyll Instagram Portfolio Theme](./screenshot.png "Jekyll Instagram Portfolio Theme")
 
-* Sitemap and XML Feed
-* Pagination in homepage
-* Posts under category
-* Realtime Search Posts _(title & description)_ by query.
-* Related Posts
-* Highlight pre
-* Next & Previous Post
-* Disqus comment
-* Projects page & Detail Project page
-* Share on social media
-* Google analytics
-* HTML Minify _(Compress HTML)_ using [Jekyll Compress HTML](https://github.com/penibelst/jekyll-compress-html)
+## Showcase
 
-#### Screenshot
+The best usage examples:
 
-![Screenshot Post Page](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/screenshot-post-page.png  "Screenshot Post Page")
+- [Pavel Guzenko](http://guzenko.org.ua)
+- [Victor Mikitenko](https://mikitenko-org-ua.github.io/site/)
+- [Anthony Fuentes](http://anthonyfuentes.us/)
+- [Serhii Grytsyshyn](https://grserhii.github.io/)
 
-### Install & Configuration
+To add your example: fork the repo, add new line to the list above and create a pull request.
 
-1. Fork this repository
-2. Edit site settings inside file of `_config.yml`
-3. Edit your projects at file of `projects.md`, `_data/projects.json` and inside path of `_project/` _(for detail project)_.
-4. Edit about yourself inside file of `about.md`
+## Featured on
 
-### How to Use?
+- [Template.net](https://www.template.net/cms-templates/jekyll/jekyll-themes-templates/)
+- [JekyllThemes.org](http://jekyllthemes.org/themes/instagram-portfolio-theme/)
 
-**a. Add new Category**
+## Powered by
 
-All categories saved inside path of `category/`, you can see the existed categories.
+- [Jekyll](https://jekyllrb.com/)
+- [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
+- [jQuery](https://jquery.com/)
+- [SnapWidget](https://snapwidget.com)
+- [Google Fonts: Lobster](https://fonts.google.com/specimen/Lobster)
+- [Font Awesome](http://fontawesome.io/)
 
-**b. Add new Posts**
-
-* All posts bassed on markdown syntax _(please googling)_. allowed extensions is `*.markdown` or `*.md`.
-* This files can found at the path of `_posts/`.
-* and the name of files are following `<date:%Y-%m-%d>-<slug>.<extension>`, for example:
+## Installation
+Install Jekyll:
 
 ```
-2013-09-23-welcome-to-jekyll.md
-
-# or
-
-2013-09-23-welcome-to-jekyll.markdown
+gem install jekyll bundler
 ```
 
-Inside the file of it,
+Install bundle dependiencies:
 
 ```
----
-layout: post                          # (require) default post layout
-title: "Your Title"                   # (require) a string title
-date: 2016-04-20 19:51:02 +0700       # (require) a post date
-categories: [python, django]          # (custom) some categories, but makesure these categories already exists inside path of `category/`
-tags: [foo, bar]                      # (custom) tags only for meta `property="article:tag"`
-image: Broadcast_Mail.png             # (custom) image only for meta `property="og:image"`, save your image inside path of `static/img/_posts`
----
-
-# your content post with markdown syntax goes here...
+bundle install
 ```
 
-### Contributing
+When finished, run the dev server:
 
-Feel free to [open a bug](https://github.com/agusmakmun/agusmakmun.github.io/issues) or [contribute to code](https://github.com/agusmakmun/agusmakmun.github.io/pulls)!
+```
+bundle exec jekyll serve
+```
+
+or just:
+
+```
+jekyll serve
+
+```
+To stop the server, use `CTRL+C`.
+
+## Building front-end assets: styles and scripts
+
+Install module dependencies:
+
+```
+npm install
+```
+
+Run the build script to generate updated front-end assets:
+
+```
+npm run build
+```
+
+Watch for changes and automatically rebuild assets (`CTRL+C` to stop):
+```
+npm run watch
+```
